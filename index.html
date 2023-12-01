@@ -31,8 +31,54 @@
         /* interactive element */
         color: #063FCB;
         }
+        .navbar {
+            width: 15%;
+            float: left;
+        }
+        /*main*/
+        .main {
+            width: 85%;
+            float: right;
+        }
+        .button {
+            margin-bottom: 32px;
+            background-color: white; 
+            font-family: "Karla";
+            font-size: 16px;
+            text-align: center;
+            transition-duration: 0.45s;
+            padding: 12px 24px;
+            border-radius: 100px;
+            border: 1px solid var(--blue, #0040DD);
+            display: inline-block;
+        }
+        .button:hover {
+            border-radius: 100px;
+            border: 1px solid var(--blue, #0040DD);
+            background-color: #EAF0FF;
+        }
     </style>
     <body>
+        <div id="navbar">
+            <!--navigation bar-->
+            <ul>
+                <li><a href="#home"><img src="angela_illustrator 1.png" alt="chibi styled drawing of a smiling girl with long brown hair" width="72px" height="103px" style="margin-bottom:5px;"></a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div id="about">
+                <p style="color: #063FCB">ABOUT</p>
+                <h1>A product designer that strives to spark joy and uplift in story, interaction, and craft.</h1>
+                <h3>Currently studying @ <a style="color:#063FCB" href="https://uwaterloo.ca/">University of Waterloo</a></h3>
+                <button style="color:#063FCB" type="button" class="button">view my work</button>
+            </div>
+        </div>
+    </body>
+</html>
         <div id="navbar">
             <!--navigation bar-->
             <ul>
