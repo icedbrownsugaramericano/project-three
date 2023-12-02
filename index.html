@@ -59,7 +59,7 @@
             font-size: 16px;
             text-align: center;
             transition-duration: 0.45s;
-            padding: 12px 24px;
+            padding: 8px 20px;
             margin-top: 12px;
             margin-bottom: 32px;
             border-radius: 100px;
@@ -72,7 +72,8 @@
             background-color: #EAF0FF;
         }
         table {
-        width: 100%;
+            width: 85%;
+            margin-bottom: 32px;
         }
         th, td {
             padding-top: 8px;
@@ -82,6 +83,32 @@
             text-align: left;
             font-weight: normal;
             color:#063FCB;
+        }
+        /*
+            Code copied from: https://www.youtube.com/watch?v=bMKlT4g-4lg
+            Author: Faizan Mohiuddin
+            Name: How to make horizontal cards using HTML and CSS (flexbox and media queries)
+            Description: Details how to create horizontal-styled cards
+            Date retrieved: Dec. 1, 2023
+        */
+
+        /*Copied code starts*/
+        .card-container {
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #0040DD;
+            width: 85%;
+            border-radius: 8px;
+        }
+        .card-1 {
+            display: flex;
+        }
+        .card-image-1{
+            width: 58%;
+        }
+        .card-text-1{
+            width: 40%;
         }
     </style>
     <body>
@@ -125,6 +152,30 @@
                         <td style="text-align: right; font-size: 14px;">JUL 2023 - PRESENT</td>
                     </tr>
                 </table>
+            </div>
+            <div id="works">
+                <p style="color:#0040DD">SELECTED WORKS</p>
+                <!--add content here; cite w3schools card-->
+                <!--
+                Code copied from: https://www.youtube.com/watch?v=bMKlT4g-4lg
+                Author: Faizan Mohiuddin
+                Name: How to make horizontal cards using HTML and CSS (flexbox and media queries)
+                Description: Details how to create horizontal-styled cards
+                Date retrieved: Dec. 1, 2023
+                -->
+
+                <!--Copied code starts-->
+                <div class="card-container">
+                    <div class="card-1">
+                        <div class="card-image-1">
+                            <img src="innisfree_clip.png" alt="a preview of a redesigned product page" width="520px" height="292.5px"/>
+                        </div>
+                        <div class="card-text-1">
+                            <h5 style="color:#0040DD">Case Study</h5>
+                            <h3 style="color:#0040DD">Redesigning Innisfree's Product Page</h3>
+                            <p>Worked with Figma, user experience design and research skills, in a team of one.</p>
+                        </div>
+                </div>
             </div>
         </div>
     </body>
