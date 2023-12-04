@@ -68,7 +68,6 @@
             float: right;
         }
         .button {
-            margin-bottom: 32px;
             background-color: white; 
             font-family: "Karla";
             font-size: 16px;
@@ -99,31 +98,37 @@
             font-weight: normal;
             color:#063FCB;
         }
-        /*
-            Code copied from: https://www.youtube.com/watch?v=bMKlT4g-4lg
-            Author: Faizan Mohiuddin
-            Name: How to make horizontal cards using HTML and CSS (flexbox and media queries)
-            Description: Details how to create horizontal-styled cards
-            Date retrieved: Dec. 1, 2023
-        */
+        /* form styling */
+        input {
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            font-family: "Karla", sans-serif;
+            font-size: 14px;
+        }
 
-        /*Copied code starts*/
-        .card-container {
+        input:focus {
+            border-color: #0040DD;
+        }
+
+        input[type=button], input[type=SUBMIT], input[type=reset] {
+            background-color: white; 
+            color:#063FCB;
+            font-family: "Karla", sans-serif;
+            font-size: 14px;
+            text-align: center;
+            transition-duration: 0.45s;
+            padding: 8px 20px;
+            margin-top: 24px;
             margin-bottom: 32px;
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #0040DD;
-            width: 85%;
-            border-radius: 8px;
+            border-radius: 100px;
+            border: 1px solid var(--blue, #0040DD);
         }
-        .card-1 {
-            display: flex;
-        }
-        .card-image-1{
-            width: 58%;
-        }
-        .card-text-1{
-            width: 40%;
+
+        input[type=button]:hover, input[type=SUBMIT]:hover, input[type=reset]:hover {
+            border-radius: 100px;
+            border: 1px solid var(--blue, #0040DD);
+            background-color: #EAF0FF;
         }
     </style>
     <body>
@@ -171,26 +176,20 @@
             <div id="works">
                 <p style="color:#0040DD">SELECTED WORKS</p>
                 <!--add content here; cite w3schools card-->
-                <!--
-                Code copied from: https://www.youtube.com/watch?v=bMKlT4g-4lg
-                Author: Faizan Mohiuddin
-                Name: How to make horizontal cards using HTML and CSS (flexbox and media queries)
-                Description: Details how to create horizontal-styled cards
-                Date retrieved: Dec. 1, 2023
-                -->
-
-                <!--Copied code starts-->
-                <div class="card-container">
-                    <div class="card-1">
-                        <div class="card-image-1">
-                            <img src="innisfree_clip.png" alt="a preview of a redesigned product page" width="520px" height="292.5px"/>
-                        </div>
-                        <div class="card-text-1">
-                            <h5 style="color:#0040DD">Case Study</h5>
-                            <h3 style="color:#0040DD">Redesigning Innisfree's Product Page</h3>
-                            <p>Worked with Figma, user experience design and research skills, in a team of one.</p>
-                        </div>
-                </div>
+            </div>
+            <div style="margin-top: 32px" id="contact">
+                <p style="color:#0040DD">CONTACT</p>
+                <form action="mailto:a47li@uwaterloo.ca">
+                    <label for="name">Name</label><br/>
+                    <input type="text" id="name" name="name" placeholder="Your Name"><br/>
+                    <label for="email">Email</label><br/>
+                    <input style="width: 35%;" type="email" id="email" email="email" placeholder="example@email.com"><br/>
+                    <label for="subject">Subject</label><br/>
+                    <input style="width: 55%" type="text" id="subject" subject="subject" placeholder="What's the subject of your message?"><br/>
+                    <label for="message">Message</label><br/>
+                    <input style="width: 55%; height: 120px;" type="text" id="message" message="message" placeholder="Enter your message here!"><br/>
+                    <input type="submit" value="SUBMIT">
+                </form>
             </div>
         </div>
     </body>
