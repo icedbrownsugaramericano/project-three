@@ -4,26 +4,33 @@
         <meta charset="utf-8">
         <title>Angela Li</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <style>
         body {
+            background-image: url("home.png");
+            background-size: 100%;
             font-family: "Karla", sans-serif;
         }
         h1 {
             font-size: 40px;
             font-weight: normal;
+            margin-top: 32px;
         }
         h2 {
             font-size: 32px;
             font-weight: normal;
+            margin-top: 28px;
         }
         h3 {
             font-size: 24px;
             font-weight: normal;
+            margin-top: 24px;
         }
         h4 {
             font-size: 16px;
             font-weight: normal;
+            padding-bottom: 16px;
         }
         h5 {
             font-size: 14px;
@@ -77,12 +84,12 @@
             margin-top: 12px;
             margin-bottom: 32px;
             border-radius: 100px;
-            border: 1px solid var(--blue, #0040DD);
+            border: 1px solid #0040DD;
             display: inline-block;
         }
         .button:hover {
             border-radius: 100px;
-            border: 1px solid var(--blue, #0040DD);
+            border: 1px solid #0040DD;
             background-color: #EAF0FF;
         }
         table {
@@ -98,47 +105,15 @@
             font-weight: normal;
             color:#063FCB;
         }
-        /* form styling */
-        input {
-            padding: 8px;
-            margin-top: 8px;
-            margin-bottom: 16px;
-            font-family: "Karla", sans-serif;
-            font-size: 14px;
-        }
-
-        input:focus {
-            border-color: #0040DD;
-        }
-
-        input[type=button], input[type=SUBMIT], input[type=reset] {
-            background-color: white; 
-            color:#063FCB;
-            font-family: "Karla", sans-serif;
-            font-size: 14px;
-            text-align: center;
-            transition-duration: 0.45s;
-            padding: 8px 20px;
-            margin-top: 24px;
-            margin-bottom: 32px;
-            border-radius: 100px;
-            border: 1px solid var(--blue, #0040DD);
-        }
-
-        input[type=button]:hover, input[type=SUBMIT]:hover, input[type=reset]:hover {
-            border-radius: 100px;
-            border: 1px solid var(--blue, #0040DD);
-            background-color: #EAF0FF;
-        }
     </style>
     <body>
         <div id="navbar">
             <!--navigation bar-->
             <ul>
-                <li><a href="#home"><img src="angela_illustrator 1.png" alt="chibi styled drawing of a smiling girl with long brown hair" width="72px" height="103px" style="margin-bottom:5px;"></a></li>
+                <li><a href="#about"><img src="angela_illustrator 1.png" alt="chibi styled drawing of a smiling girl with long brown hair" width="72px" height="103px" style="margin-bottom:5px;"></a></li>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#works">WORKS</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#reading">READING</a></li>
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
@@ -156,7 +131,7 @@
                         <th style="padding-bottom: 20px; text-align: right">DURATION</th>
                     </tr>
                     <tr>
-                        <td>Design Associate <a style="color:#063FCB; text-decoration: none; font-weight: bold" href="https://dojo.nucleate.xyz/"> @ Nucleate Dojo</a></td>
+                        <td>Design Associate <a style="color:#063FCB; text-decoration: none; font-weight: bold" href="https://dojo.nucleate.xyz/" target="_blank"> @ Nucleate Dojo</a></td>
                         <td style="text-align: right; font-size: 14px;">NOV 2023 - PRESENT</td>
                     </tr>
                     <tr>
@@ -164,32 +139,30 @@
                         <td style="text-align: right; font-size: 14px;">SEPT 2023 - PRESENT</td>
                     </tr>
                     <tr>
-                        <td>Graphic Designer <a style="color:#063FCB; text-decoration: none; font-weight: bold" href="https://waterlooblockchain.ca/">@ Waterloo Blockchain</a></td>
+                        <td>Graphic Designer <a style="color:#063FCB; text-decoration: none; font-weight: bold" href="https://waterlooblockchain.ca/" target="_blank">@ Waterloo Blockchain</a></td>
                         <td style="text-align: right; font-size: 14px;">MAR 2023 - AUG 2023</td>
                     </tr>
                     <tr>
-                        <td>Wedding Coordinator Assistant <a style="color:#063FCB; text-decoration: none; font-weight: bold" href="https://blushandbowties.ca/"> @ Blush and Bowties</a></td>
+                        <td>Wedding Coordinator Assistant <a style="color:#063FCB; text-decoration: none; font-weight: bold" href="https://blushandbowties.ca/" target="_blank"> @ Blush and Bowties</a></td>
                         <td style="text-align: right; font-size: 14px;">JUL 2023 - PRESENT</td>
                     </tr>
                 </table>
             </div>
             <div id="works">
-                <p style="color:#0040DD">SELECTED WORKS</p>
-                <!--add content here; cite w3schools card-->
+                <p style="color:#0040DD">READINGS</p>
+                <p style="word-spacing: 1%; width: 85%">Currently, I'm assembling the portfolio case studies and pages to present. In the meanwhile, I've attached some articles and readings I enjoy or found particularly interesting! </p>
+                <h3>no good alone by Rayne Fisher-Quann</h3>
+                <a href="https://internetprincess.substack.com/p/no-good-alone" target="_blank">Link to Article</a>
             </div>
             <div style="margin-top: 32px" id="contact">
-                <p style="color:#0040DD">CONTACT</p>
-                <form action="mailto:a47li@uwaterloo.ca">
-                    <label for="name">Name</label><br/>
-                    <input type="text" id="name" name="name" placeholder="Your Name"><br/>
-                    <label for="email">Email</label><br/>
-                    <input style="width: 35%;" type="email" id="email" email="email" placeholder="example@email.com"><br/>
-                    <label for="subject">Subject</label><br/>
-                    <input style="width: 55%" type="text" id="subject" subject="subject" placeholder="What's the subject of your message?"><br/>
-                    <label for="message">Message</label><br/>
-                    <input style="width: 55%; height: 120px;" type="text" id="message" message="message" placeholder="Enter your message here!"><br/>
-                    <input type="submit" value="SUBMIT">
-                </form>
+                <p style="color:#0040DD; margin-bottom: 32px;">CONTACT</p>
+                <a style="text-decoration: none; color:#222222; font-weight:bolder; font-size: 24px" href="https://www.linkedin.com/in/angela-li-link/">LinkedIn</a><br/>
+                <a style="text-decoration: none; color:#222222; font-weight:bolder; font-size: 24px" href="mailto:a47li@uwaterloo.ca">Email</a>
+            </div>
+            <div id="footer">
+                <footer>
+                    <p style="color:#0040DD; font-size:12px">MADE WITH LOVE & GREEN APPLE HI-CHEWS</p>
+                </footer>
             </div>
         </div>
     </body>
